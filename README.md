@@ -1,7 +1,7 @@
 This document explains the data source and how to use the replication materials for Espadafor & Martínez (2021).
 All the code and data will be also published and available in Harvard Dataverse once the paper is accepted for publication.
 
-Please email us: maria.canizares@eui.eu & sergi.martinez@eui.eu
+Please carefully read this document to replicate the resutls of this study. If you face any problem, drop us a line: maria.canizares@eui.eu & sergi.martinez@eui.eu
 
 # Data description
 
