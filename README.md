@@ -1,7 +1,7 @@
-This document explains the data source and how to use the replication materials for Espadafor & Martínez (2021). 
-All the code and data will be published in Harvard Dataverse once the paper is accepted for publication.
+This document explains the data source and how to use the replication materials for Espadafor & Martínez (2021).
+All the code and data will be also published and available in Harvard Dataverse once the paper is accepted for publication.
 
-Please email us: maria.canizares@eui & sergi.martinez@eui.eu
+Please email us: maria.canizares@eui.eu & sergi.martinez@eui.eu
 
 # Data description
 
