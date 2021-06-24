@@ -46,30 +46,19 @@ A copy of all the data is provided as part of this archive. The data are in the 
 
 To replicate the results of Espadafor & Martínez (2021) you will need the following files:
 
-| Data file | Sources | Notes    |Provided |
-|-----------|--------|----------|---------|
-| `data/main/gambling.dta` | School records, \\
-                             Licenses Census, \\
-                             Panel on neighborhoods
-                             | Combines multiple data sources, all publicly available | Yes |
-                             
-| `data/supplementary/prices.dta` | Adds Panel on rental prices  | Combines multiple data sources, all publicly available | Yes |
-| `data/derived/starbucks.dta`| All listed  | Combines multiple data sources, all publicly available | Yes |
-
-
-- The file "gambling.dta" includes all the variables ready to replicate the main analysiis of this study. 
-- The file "gambling.do" has the code to reproduce results in Fig.1 to Fig.3 and Fig.5
-- The file "honestDID.r" has the code to reproduce results using the Callaway and Sant’Anna (2020) estimator for staggered
+- The file `gambling.dta` includes all the variables ready to replicate the main analysiis of this study. 
+- The file `gambling.do` has the code to reproduce results in Fig.1 to Fig.3 and Fig.5
+- The file `honestDID.r` has the code to reproduce results using the Callaway and Sant Anna (2020) estimator for staggered
 difference-in-differences designs, which is reeported in Fig.4 and Fig S14-15 in the Supplementari Information Document.
 
 The following files creates additional results under alternative specifications and alternative outcomes as reported in the online Supplementary Material document:
 
-- The file "gambling_SI.do" has the code to reproduce all summary statistics (Tables 2-3 and S.Fig 2-4), Average effect and time-placebos (Tables 5-9 and S.Figure 5)
-- The file "sorting.do" has the code to reproduce Tables S.10-S.14 and Fig.S9.
-- The file "prices.dta" includes all the variables in the main study, and rent prices by neighborhoods from 2014-2017.
-- The file "prices.do" includes the code to reproduce the results in Tables S15-S17 and Fig.S10.
-- The file "starbucks.dta" includes all the variables in the main study, and schools' distance to Starbucks from 2014-2017.
-- The file "starbucks.do" has the code to reproduce results in Table S18 and Fig.S11-12
+- The file `gambling_SI.do" has the code to reproduce all summary statistics (Tables 2-3 and S.Fig 2-4), Average effect and time-placebos (Tables 5-9 and S.Figure 5)
+- The file `sorting.do` has the code to reproduce Tables S.10-S.14 and Fig.S9.
+- The file `prices.dta` includes all the variables in the main study, and rent prices by neighborhoods from 2014-2017.
+- The file `prices.do` includes the code to reproduce the results in Tables S15-S17 and Fig.S10.
+- The file `starbucks.dta` includes all the variables in the main study, and schools' distance to Starbucks from 2014-2017.
+- The file `starbucks.do` has the code to reproduce results in Table S18 and Fig.S11-12
 
 
 
