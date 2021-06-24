@@ -47,7 +47,8 @@ To replicate the results of Espadafor & Martínez (2021) you will need the follo
 
 - The file "gambling.dta" includes all the variables ready to replicate the main analysiis of this study. 
 - The file "gambling.do" has the code to reproduce results in Fig.1 to Fig.3 and Fig.5
-- The file "honestDID.r" has the code to reproduce results in Fig.4 and Fig S14-15 in the Supplementari Information Document.
+- The file "honestDID.r" has the code to reproduce results using the Callaway and Sant’Anna (2020) estimator for staggered
+difference-in-differences designs, which is reeported in Fig.4 and Fig S14-15 in the Supplementari Information Document.
 
 The following files creates additional results under alternative specifications and alternative outcomes as reported in the online Supplementary Material document:
 
