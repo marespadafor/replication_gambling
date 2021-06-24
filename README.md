@@ -60,6 +60,30 @@ The following files creates additional results under alternative specifications 
 - The file `starbucks.dta` includes all the variables in the main study, and schools' distance to Starbucks from 2014-2017.
 - The file `starbucks.do` has the code to reproduce results in Table S18 and Fig.S11-12
 
+### Software Requirements
+
+- Stata (code was last run with version 16)
+  - `estout` 
+  - `rdrobust` 
+  - the program "`0_setup.do`" will install all dependencies locally, and should be run once.
+
+
+- R 3.4.3
+  - `tidyr` (0.8.3)
+  - `rdrobust` (0.99.4)
+  - the file "`0_setup.R`" will install all dependencies (latest version), and should be run once prior to running other programs.
+
+
+### Figure & tables list
+
+| Figure/Table #    | Program                  | Line Number | Output file                      | Note                            |
+|-------------------|--------------------------|-------------|----------------------------------|---------------------------------|
+| Table 1           | 02_analysis/table1.do    |             | summarystats.csv                 ||
+| Table 2           | 02_analysis/table2and3.do| 15          | table2.csv                       ||
+| Table 3           | 02_analysis/table2and3.do| 145         | table3.csv                       ||
+| Figure 1          | n.a. (no data)           |             |                                  | Source: Herodus (2011)          |
+| Figure 2          | 02_analysis/fig2.do      |             | figure2.png                      ||
+| Figure 3          | 02_analysis/fig3.do      |             | figure-robustness.png            | Requires confidential data      |
 
 
 
