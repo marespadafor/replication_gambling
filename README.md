@@ -61,7 +61,7 @@ The replicate the placebo analysis of Espadafor & Martínez (2021) you will need
 
 
 - The file "starbucks.dta" includes all the variables in the main study, and schools' distance to Starbucks from 2014-2017.
-- The file "starbuscks.do" has the code to reproduce results in Table S18 and Fig.S11-12
+- The file "starbucks.do" has the code to reproduce results in Table S18 and Fig.S11-12
 
 
 
