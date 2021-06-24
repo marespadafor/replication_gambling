@@ -53,7 +53,7 @@ difference-in-differences designs, which is reeported in Fig.4 and Fig S14-15 in
 
 The following files creates additional results under alternative specifications and alternative outcomes as reported in the online Supplementary Material document:
 
-- The file `gambling_SI.do" has the code to reproduce all summary statistics (Tables 2-3 and S.Fig 2-4), Average effect and time-placebos (Tables 5-9 and S.Figure 5)
+- The file `gambling_SI.do` has the code to reproduce all summary statistics (Tables 2-3 and S.Fig 2-4), Average effect and time-placebos (Tables 5-9 and S.Figure 5)
 - The file `sorting.do` has the code to reproduce Tables S.10-S.14 and Fig.S9.
 - The file `prices.dta` includes all the variables in the main study, and rent prices by neighborhoods from 2014-2017.
 - The file `prices.do` includes the code to reproduce the results in Tables S15-S17 and Fig.S10.
