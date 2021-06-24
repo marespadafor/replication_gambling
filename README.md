@@ -1,10 +1,10 @@
 # INSTRUCTIONS
-This document explains the data source and how to use the replication materials for "The Negative Consequences of Gambling Opportunities on
+This document explains the data sources and how to use the replication materials for "The Negative Consequences of Gambling Opportunities on
 Human Capital Formation: Evidence from Spain", Espadafor & Martínez (2021).
 
 All the code and data will be also published and available in Harvard Dataverse once the paper is accepted for publication.
 
-This replication package contains Stata/R data- and do-files/scripts to generate the results reported in "HThe Negative Consequences of Gambling Opportunities on
+This replication package contains Stata/R data- and do-files/scripts to generate the results reported in "The Negative Consequences of Gambling Opportunities on
 Human Capital Formation: Evidence from Spain" by Espadafor & Martínez (2021).
 
 Please carefully read this document to replicate the resutls of this study. If you face any problem, drop us a line: maria.canizares@eui.eu & sergi.martinez@eui.eu
@@ -43,11 +43,14 @@ school to the rent prices in their area.
 
 ## Files description
 
-To replicate the main analysis of Espadafor & Martínez (2021) you will need the following files:
+To replicate the results of Espadafor & Martínez (2021) you will need the following files:
 
 - The file "gambling.dta" includes all the variables ready to replicate the main analysiis of this study. 
 - The file "gambling.do" has the code to reproduce results in Fig.1 to Fig.3 and Fig.5
 - The file "honestDID.r" has the code to reproduce results in Fig.4 and Fig S14-15 in the Supplementari Information Document.
+
+The following files creates additional results under alternative specifications and alternative outcomes as reported in the online Supplementary Material document:
+
 - The file "gambling_SI.do" has the code to reproduce all summary statistics (Tables 2-3 and S.Fig 2-4), Average effect and time-placebos (Tables 5-9 and S.Figure 5)
 - The file "sorting.do" has the code to reproduce Tables S.10-S.14 and Fig.S9.
 - The file "prices.dta" includes all the variables in the main study, and rent prices by neighborhoods from 2014-2017.
