@@ -48,10 +48,9 @@ To replicate the results of Espadafor & Martínez (2021) you will need the follo
 
 | Data file | Source | Notes    |Provided |
 |-----------|--------|----------|---------|
-| `data/main/gambling.dta` | Madrid's school records, 
-                            Censo de locales, sus actividades y terrazas de hostelería y restauración,
-                            Panel de indicadores de distritos y barrios de Madrid. Estudio sociodemográfico,
+| `data/main/gambling.dta` | School records, census, panel on neighborhoods, panel on rental prices |
                              | Combines multiple data sources, all publicly available| Yes |
+                             
 | `data/supplementary/prices.dta` | Renta mensual de la vivienda en alquiler (€/m2 construido) por Distrito y por Trimestre| Combines multiple data sources, all publicly available| Yes |
 | `data/derived/starbucks.dta`| All listed  | Combines multiple data sources, all publicly available | Yes |
 
