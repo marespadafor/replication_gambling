@@ -1,11 +1,10 @@
 # README
-This document explains the data sources and how to use the replication materials for "The Negative Consequences of Gambling Opportunities on
+This document explains the data sources and how to use the replication materials for "The Negative Consequences of Betting on
 Human Capital Formation: Evidence from Spain", Espadafor & Martínez (2021).
 
 All the code and data will be also published and available in Harvard Dataverse once the paper is accepted for publication.
 
-This replication package contains Stata/R data- and do-files/scripts to generate the results reported in "The Negative Consequences of Gambling Opportunities on
-Human Capital Formation: Evidence from Spain" by Espadafor & Martínez (2021).
+This replication package contains Stata/R data- and do-files/scripts to generate the results reported in "The Negative Consequences of Sport Gambling Opportunities on Human Capital Formation: Evidence from Spain" by Espadafor & Martínez (2021).
 
 Please carefully read this document to replicate the resutls of this study. If you face any problem, drop us a line: maria.canizares@eui.eu & sergi.martinez@eui.eu
 
@@ -49,14 +48,17 @@ To replicate the results of Espadafor & Martínez (2021) you will need the follo
 - The files `01_estimates_main.do` to `02_estimates_logdist.do` has the code to reproduce results in each figure in the manuscript.
 - The file `06_code_for_PanelMatchdata.do` has the code to reproduce results using the Callaway and Sant Anna (2020) estimator for staggered
 difference-in-differences designs, which is reeported in Fig.4 and then in Fig S14-15 in the Supplementari Information Document.
+- The file `03_estimates_placebo_number_student.do` has the code to reproduce results using a placebo outcome: number of students. 
 
 The following files creates additional results under alternative specifications and alternative outcomes as reported in the online Supplementary Material document:
 
-- The file `08_SI.do` has the code to reproduce:
+- The file `08_SI.do` has the code to reproduce all tables presented in the SI:
   - All summary statistics (Tables S2-3), Average effect and time-placebos (Tables S5-9)
-  - The code to reproduce Tables S.10-S.14.
-  - The code to reproduce the results in Tables S15-S17.
-  - The code to reproduce results in Table S18-S19 
+  - The likelihood of school being treated by type of schoool (Table S4)
+  - Replication of main results using logdistance (Table S10)
+  - Results from robutsness checks for compositonal change using number of students (Tables S11-S14) and rent prices (Tables S15-17)
+  - Restuls from placebo test using Starbacks (Table S18)
+  - Results using a different treatment definition, <200m (Table S19)
 
 
 ### Figure & tables list
@@ -130,8 +132,18 @@ The following files creates additional results under alternative specifications 
 | renta              | Average income where schools' are located                        |
 | renta2             | Takes 1 if average income is above the average of Madrid         |
 | tf                 | The first period when a particular observation is treated        |
+|--------------------|------------------------------------------------------------------|
 
-
+| Data file           | Description                                                       |  
+|---------------------|-------------------------------------------------------------------|
+| gambling_data.dta   | Main dataset containing all variables described above             |
+| apuestas_tipos_.dta | Dataset containing type of betting houses                         |
+| all_mapa2.dta       | Dataset containing longtitude and latitude from all units         |
+| colegios2_.dta      | Dataset containing longitude and latitude for all schools         |
+| colegios3_.dta      | Dataset containing longitude and latitude for all public schools  |  
+| colegios4_.dta      | Dataset containing longitude and latitude for all private schools | 
+| dapuestas_year.dta  | Dataset containing betting house information by year              |
+|---------------------|-------------------------------------------------------------------|
 ### Software Requirements
 
 - Stata (code was last run with version 16)
