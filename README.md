@@ -39,53 +39,132 @@ school to the rent prices in their area.
 
 - The data on rent prices is extracted from Madrid open access records, "Renta mensual de la vivienda en alquiler (€/m2 construido) por Distrito y por Trimestre". It can be downloaded here: https://www.madrid.es/portales/munimadrid/es/Inicio/El-Ayuntamiento/Estadistica/Areas-de-informacion-estadistica/Edificacion-y-vivienda/Mercado-de-la-vivienda/Precios-de-la-vivienda/?vgnextfmt=default&vgnextoid=bf281b47a277b210VgnVCM1000000b205a0aRCRD&vgnextchannel=22613c7ea422a210VgnVCM1000000b205a0aRCRD
 
-A copy of all the data is provided as part of this archive. The data are in the public domain.
-
-
+A copy of all the data is provided as part of this archive. The data are in the public domain. 
 
 ## Files description
 
-To replicate the results of Espadafor & Martínez (2021) you will need the following files:
+To replicate the results of Espadafor & Martínez (2021) you will need the following files and codes:
 
-- The file `gambling.dta` includes all the variables ready to replicate the main analysiis of this study. 
-- The file `gambling.do` has the code to reproduce results in Fig.1 to Fig.3 and Fig.5
-- The file `honestDID.r` has the code to reproduce results using the Callaway and Sant Anna (2020) estimator for staggered
-difference-in-differences designs, which is reeported in Fig.4 and Fig S14-15 in the Supplementari Information Document.
+- The file `gambling_data.dta` includes all the main variables ready to replicate the main analysis of this study. 
+- The files `01_estimates_main.do` to `02_estimates_logdist.do` has the code to reproduce results in each figure in the manuscript.
+- The file `06_code_for_PanelMatchdata.do` has the code to reproduce results using the Callaway and Sant Anna (2020) estimator for staggered
+difference-in-differences designs, which is reeported in Fig.4 and then in Fig S14-15 in the Supplementari Information Document.
 
 The following files creates additional results under alternative specifications and alternative outcomes as reported in the online Supplementary Material document:
 
-- The file `gambling_SI.do` has the code to reproduce all summary statistics (Tables 2-3 and S.Fig 2-4), Average effect and time-placebos (Tables 5-9 and S.Figure 5)
-- The file `sorting.do` has the code to reproduce Tables S.10-S.14 and Fig.S9.
-- The file `prices.dta` includes all the variables in the main study, and rent prices by neighborhoods from 2014-2017.
-- The file `prices.do` includes the code to reproduce the results in Tables S15-S17 and Fig.S10.
-- The file `starbucks.dta` includes all the variables in the main study, and schools' distance to Starbucks from 2014-2017.
-- The file `starbucks.do` has the code to reproduce results in Table S18 and Fig.S11-12
+- The file `08_SI.do` has the code to reproduce:
+  - All summary statistics (Tables S2-3), Average effect and time-placebos (Tables S5-9)
+  - The code to reproduce Tables S.10-S.14.
+  - The code to reproduce the results in Tables S15-S17.
+  - The code to reproduce results in Table S18-S19 
+
+
+### Figure & tables list
+
+| Figure/Table | Script      | Data                                                  | Note:                                       |
+|--------------|-------------|-------------------------------------------------------|---------------------------------------------|
+| Figure 1     | figure1.r   | apuestas_tipos_.dta                                   |                                             |
+| Figure 2     | figure2.r   | pau2.dta                                              | Source: 01_estimates_main.do                |
+| Figure 3     | figure3.r   | distance2.dta                                         | Source: 02_estimates_logdist.do             |
+| Figure 4     | figure4.r   | gambling_data.dta                                     |                                             |
+| Figure 5     | figure5.r   | gambling_data.dta, num2.dta                           | Source: 03_estimates_placebo_number_student |  
+| Figure S1    | figureS1.r  | movilidad_merged_1503.dta                             |                                             |
+| Figure S2    | figureS2.r  | apuestas_tipos_.dta, colegiosX_.dta, all_mapa2.dta    |                                             |
+| Figure S3    | figureS3.r  |                                                       |                                             | 
+| Figure S4    | figureS4.r  | panelmatch.dta                                        | Source: 06_code_for_PanelMatchdata.do       |
+| Figure S5    | figureS5.r  | pau2.dta                                              | Source: 01_estimates_main.do                |
+| Figure S6    | figureS6.r  | gambling_data.dta                                     |                                             |
+| Figure S7    | figureS7.r  | gambling_data.dta                                     |                                             |
+| Figure S8    | figureS8.r  | distance2.dta                                         | Source: 02_estimates_logdist.do             |
+| Figure S9    | figureS9.r  | gambling_data.dta, num2.dta                           | Source: 03_estimates_placebo_number_student |  
+| Figure S10   | figureS10.r | price2.dta                                            | Source: 04_estimates_placebo_rentprices.do  |
+| Figure S11   | figureS11.r | gambling_data.dta                                     |                                             |
+| Figure S12   | figureS12.r | star1.dta                                             | Source: 05_estimates_placebo_starbucks.do   |
+| Figure S13   | figureS11.r | gambling_data.dta                                     |                                             |
+| Figure S14   | figureS11.r | gambling_data.dta                                     |                                             |
+| Table S1     | appendix.do | gambling_data.dta                                     |                                             |
+| Table S2     | appendix.do | gambling_data.dta                                     |                                             |
+| Table S3     | appendix.do | gambling_data.dta                                     |                                             |
+| Table S4     | appendix.do | gambling_data.dta                                     |                                             |
+| Table S5     | appendix.do | gambling_data.dta                                     |                                             |
+| Table S6     | appendix.do | gambling_data.dta                                     |                                             |
+| Table S7     | appendix.do | gambling_data.dta                                     |                                             |
+| Table S8     | appendix.do | gambling_data.dta                                     |                                             |
+| Table S9     | appendix.do | gambling_data.dta                                     |                                             |
+| Table S10    | appendix.do | gambling_data.dta                                     |                                             |
+| Table S11    | appendix.do | gambling_data.dta                                     |                                             |
+| Table S12    | appendix.do | gambling_data.dta                                     |                                             |
+| Table S13    | appendix.do | gambling_data.dta                                     |                                             |
+| Table S14    | appendix.do | gambling_data.dta                                     |                                             |
+| Table S15    | appendix.do | gambling_data.dta                                     |                                             |
+| Table S16    | appendix.do | gambling_data.dta                                     |                                             |
+| Table S17    | appendix.do | gambling_data.dta                                     |                                             |
+| Table S18    | appendix.do | gambling_data.dta                                     |                                             |
+
+### Variable description
+
+| Variable name:     |  Description                                                     |  
+|--------------------|------------------------------------------------------------------|            
+| school_id          | High School's unique id                                          | 
+| year               |                                                                  |
+| apuestas_id        | Betting houses' unique id                                        |
+| km_to_apuestas_id  | Distance from school to closest betting house in km              |
+| metres             | Distance from school to closest betting house in m               |
+| metres_years       | Distance from school to closest betting house in m, by year      |
+| name               | High School's name                                               |
+| district           | District where high schools are located                          |
+| postcode           | Postcode where high schools are located                          |
+| pau                | Average high school performance in PAU                           |
+| pauXXXX            | Average high school performance in PAU by academic year          |
+| num                | Average number of students by high school                        |
+| nXXXX              | Average number of students by high school and academic year      |          
+| publico            | Whether schools are publicly financed                            |
+| treat              | Takes 1 if there is a betting house closer than 500m             |
+| treat_year         | Takes 1 if there is a betting house closer than 500m, by year    |
+| logdist_year       | Logged distance from school to closest bettng houses by year     |
+| alquiler           | Rent prices euros/m2 by district                                 |
+| star_id            | Starbucks' unique id                                             |
+| km_to_star_id      | Distance from school to closest Starbucks in km                  |
+| metres_year_star   | Distance from school to closest Starbucks in m by year           |    
+| logdist_year_star  | Logged distance from school to closest Starbucks                 | 
+| renta              | Average income where schools' are located                        |
+| renta2             | Takes 1 if average income is above the average of Madrid         |
+| tf                 | The first period when a particular observation is treated        |
+
 
 ### Software Requirements
 
 - Stata (code was last run with version 16)
   - `estout` 
-  - `rdrobust` 
-  - the program "`0_setup.do`" will install all dependencies locally, and should be run once.
+  - `xtreg`
+  - `estab` 
+  
+- R (code was last run wth version 4.0.4 (2021-02-15))
+  - Platform: x86_64-apple-darwin17.0 (64-bit)
+  - Running under: macOS Mojave 10.14.3
+  - Attached base packages:
+    [1] stats     graphics  grDevices utils     datasets  methods   base     
 
+  - other attached packages:
+    [1] foreign_0.8-81 sf_0.9-6       sp_1.4-2       ggmap_3.0.0   
+    [5] ggplot2_3.3.3  haven_2.3.1   
 
-- R 3.4.3
-  - `tidyr` (0.8.3)
-  - `rdrobust` (0.99.4)
-  - the file "`0_setup.R`" will install all dependencies (latest version), and should be run once prior to running other programs.
-
-
-### Figure & tables list
-
-| Figure/Table #    | Program                  | Line Number | Output file                      | Note                            |
-|-------------------|--------------------------|-------------|----------------------------------|---------------------------------|
-| Table 1           | 02_analysis/table1.do    |             | summarystats.csv                 ||
-| Table 2           | 02_analysis/table2and3.do| 15          | table2.csv                       ||
-| Table 3           | 02_analysis/table2and3.do| 145         | table3.csv                       ||
-| Figure 1          | n.a. (no data)           |             |                                  | Source: Herodus (2011)          |
-| Figure 2          | 02_analysis/fig2.do      |             | figure2.png                      ||
-| Figure 3          | 02_analysis/fig3.do      |             | figure-robustness.png            | Requires confidential data      |
-
-
+  - loaded via a namespace (and not attached):
+    [1] Rcpp_1.0.6          pillar_1.5.0        compiler_4.0.4     
+    [4] plyr_1.8.6          class_7.3-18        forcats_0.5.1      
+    [7] bitops_1.0-6        tools_4.0.4         lifecycle_1.0.0    
+    [10] tibble_3.0.6        gtable_0.3.0        lattice_0.20-41    
+    [13] pkgconfig_2.0.3     png_0.1-7           rlang_0.4.10       
+    [16] cli_2.3.0           DBI_1.1.1           e1071_1.7-3        
+    [19] stringr_1.4.0       withr_2.4.1         dplyr_1.0.4        
+    [22] httr_1.4.2          generics_0.1.0      RgoogleMaps_1.4.5.3
+    [25] vctrs_0.3.6         hms_1.0.0           classInt_0.4-3     
+    [28] grid_4.0.4          tidyselect_1.1.0    glue_1.4.2         
+    [31] R6_2.5.0            jpeg_0.1-8.1        fansi_0.4.2        
+    [34] readr_1.4.0         tidyr_1.1.2         purrr_0.3.4        
+    [37] magrittr_2.0.1      units_0.6-7         scales_1.1.1       
+    [40] ellipsis_0.3.1      assertthat_0.2.1    colorspace_2.0-0   
+    [43] KernSmooth_2.23-18  utf8_1.1.4          stringi_1.5.3      
+    [46] munsell_0.5.0       rjson_0.2.20        crayon_1.4.1 
 
 
