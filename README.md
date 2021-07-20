@@ -132,7 +132,6 @@ The following files creates additional results under alternative specifications 
 | renta              | Average income where schools' are located                        |
 | renta2             | Takes 1 if average income is above the average of Madrid         |
 | tf                 | The first period when a particular observation is treated        |
-|--------------------|------------------------------------------------------------------|
 
 | Data file           | Description                                                       |  
 |---------------------|-------------------------------------------------------------------|
@@ -143,7 +142,7 @@ The following files creates additional results under alternative specifications 
 | colegios3_.dta      | Dataset containing longitude and latitude for all public schools  |  
 | colegios4_.dta      | Dataset containing longitude and latitude for all private schools | 
 | dapuestas_year.dta  | Dataset containing betting house information by year              |
-|---------------------|-------------------------------------------------------------------|
+
 ### Software Requirements
 
 - Stata (code was last run with version 16)
