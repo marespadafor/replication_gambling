@@ -40,14 +40,21 @@ school to the rent prices in their area.
 
 A copy of all the data is provided as part of this archive. The data are in the public domain. 
 
-## Files description
+## Replication Folder and Files description
 
-To replicate the results of Espadafor & Martínez (2021) you will need the following files and codes:
+The Replication Material is structured as follows:
+
+- Data folder contains all datasets needed to replicate the analysis presented both in the manuscript and the Supplementary Information
+- Scripts folder contains the code to replicate tables and figures
+- Estimates folder contains all regression estimates saved as .dta files (these come from the scripts in the folder above)
+- Tables folder contains all tables.text outcomes from the regressions in their respective code
+
+To replicate the results of Espadafor & Martínez (2021) you will need the following files and codes listed in the table bellow.
 
 - The file `gambling_data.dta` includes all the main variables ready to replicate the main analysis of this study. 
 - The files `01_estimates_main.do` to `02_estimates_logdist.do` has the code to reproduce results in each figure in the manuscript.
 - The file `06_code_for_PanelMatchdata.do` has the code to reproduce results using the Callaway and Sant Anna (2020) estimator for staggered
-difference-in-differences designs, which is reeported in Fig.4 and then in Fig S14-15 in the Supplementari Information Document.
+difference-in-differences designs, which is reeported in Fig.4 and then in Fig S14-15 in the Supplementary Information Document.
 - The file `03_estimates_placebo_number_student.do` has the code to reproduce results using a placebo outcome: number of students. 
 
 The following files creates additional results under alternative specifications and alternative outcomes as reported in the online Supplementary Material document:
