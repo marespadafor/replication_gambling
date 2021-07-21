@@ -12,8 +12,7 @@ Please carefully read this document to replicate the resutls of this study. If y
 
 This section details the source of the data employed in this study.
 
-This study uses several sources for data, which are publicly available.
-
+This study uses several sources for data, which are publicly available. The only exception is the data from the Millenium Cohort Study, which we use to estimate the proportion of students who gamble in the UK by age 14 (footnote 12 in the Manuscript). MCS data are available through the UK Data Service, see more information in how to access it here:https://cls.ucl.ac.uk/cls-studies/millennium-cohort-study/ The `07_gambling_mcs.do` contains information and the code for calculations of Footnote 12.
 
 - Information on schools' characteristics and educational performance come from public administrative data yearly released by Madrid's education authorities, which is available here: https://gestiona3.madrid.org/wpad_pub/run/j/MostrarConsultaGeneral.icm. A version of this data, including educational centers that offered the academic track in post-compulsory education (Bachillerato, in Spanish), has been published and it is publicly available to download here: Espadafor, Mar, 2021, "Panel Data on High Schools in Madrid (2013-2018)", https://doi.org/10.7910/DVN/K4NSBK, Harvard Dataverse, V1, UNF:6:B5vf/YEfEjiSv/71pOi4Kw== [fileUNF] 
  
@@ -38,7 +37,7 @@ school to the rent prices in their area.
 
 - The data on rent prices is extracted from Madrid open access records, "Renta mensual de la vivienda en alquiler (€/m2 construido) por Distrito y por Trimestre". It can be downloaded here: https://www.madrid.es/portales/munimadrid/es/Inicio/El-Ayuntamiento/Estadistica/Areas-de-informacion-estadistica/Edificacion-y-vivienda/Mercado-de-la-vivienda/Precios-de-la-vivienda/?vgnextfmt=default&vgnextoid=bf281b47a277b210VgnVCM1000000b205a0aRCRD&vgnextchannel=22613c7ea422a210VgnVCM1000000b205a0aRCRD
 
-A copy of all the data is provided as part of this archive. The data are in the public domain. 
+A copy of all the data is provided as part of this archive. The data are in the public domain.
 
 ## Replication Folder and Files description
 
@@ -91,6 +90,7 @@ The following files creates additional results under alternative specifications 
 | Figure S12   | figureS12.r | star1.dta                                             | Source: 05_estimates_placebo_starbucks.do   |
 | Figure S13   | figureS11.r | gambling_data.dta                                     |                                             |
 | Figure S14   | figureS11.r | gambling_data.dta                                     |                                             |
+| Figure S15   | appendix.do | gambling_data.dta                                     |                                             |
 | Table S1     | appendix.do | gambling_data.dta                                     |                                             |
 | Table S2     | appendix.do | gambling_data.dta                                     |                                             |
 | Table S3     | appendix.do | gambling_data.dta                                     |                                             |
@@ -109,6 +109,7 @@ The following files creates additional results under alternative specifications 
 | Table S16    | appendix.do | gambling_data.dta                                     |                                             |
 | Table S17    | appendix.do | gambling_data.dta                                     |                                             |
 | Table S18    | appendix.do | gambling_data.dta                                     |                                             |
+           
 
 ### Variable description
 
