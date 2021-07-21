@@ -1,10 +1,9 @@
 # README
-This document explains the data sources and how to use the replication materials for "The Negative Consequences of Betting on
-Human Capital Formation: Evidence from Spain", Espadafor & Martínez (2021).
+This document explains the data sources and how to use the replication materials for "The negative consequences of sports gambling opportunities on human capital formation: evidence from Spain", Espadafor & Martínez (2021).
 
 All the code and data will be also published and available in Harvard Dataverse once the paper is accepted for publication.
 
-This replication package contains Stata/R data- and do-files/scripts to generate the results reported in "The Negative Consequences of Sport Gambling Opportunities on Human Capital Formation: Evidence from Spain" by Espadafor & Martínez (2021).
+This replication package contains Stata/R data- and do-files/scripts to generate the results reported in "The negative consequences of sports gambling opportunities on human capital formation: evidence from Spain" by Espadafor & Martínez (2021).
 
 Please carefully read this document to replicate the resutls of this study. If you face any problem, drop us a line: maria.canizares@eui.eu & sergi.martinez@eui.eu
 
